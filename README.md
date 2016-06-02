@@ -14,7 +14,7 @@ documentation: http://docs.oracle.com/javase/8/docs/
 mvn exec:java
 ```
 
-*Generate Documentation*  
+*Generate documentation*  
 
 ```
 mvn javadoc:javadoc
