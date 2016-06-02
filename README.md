@@ -7,3 +7,21 @@ documentation:  https://docs.mongodb.com/v3.0/
 
 * `Java SE 1.8` see with `java -version` and `javac -version`  
 documentation: http://docs.oracle.com/javase/8/docs/  
+
+*Execution*  
+
+```
+mvn exec:java
+```
+
+*Generate Documentation*  
+
+```
+mvn javadoc:javadoc
+```
+
+*Run test*  
+
+```
+mvn test
+```
