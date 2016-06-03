@@ -13,3 +13,9 @@ hs_err_pid*
 
 # maven
 java-mongo/target/
+
+# eclipse
+java-mongo/bin/
+java-mongo/.classpath
+java-mongo/.project
+java-mongo/.settings

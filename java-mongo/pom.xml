@@ -19,6 +19,10 @@
     <plugin.exec.maven.version>1.3</plugin.exec.maven.version>
     <!-- http://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
     <plugin.maven.compiler.version>2.4</plugin.maven.compiler.version>
+    <!-- http://mvnrepository.com/artifact/org.apache.maven.plugins/maven-eclipse-plugin -->
+    <plugin.maven.eclipse.version>2.10</plugin.maven.eclipse.version>
+    <!-- http://mvnrepository.com/artifact/org.apache.maven.plugins/maven-eclipse-plugin -->
+    <plugin.maven.dependency.version>2.10</plugin.maven.dependency.version>
     <!-- http://mvnrepository.com/artifact/junit/junit -->
     <junit.version>4.12</junit.version>
     <!-- http://mvnrepository.com/artifact/org.mongodb/mongo-java-driver -->
@@ -46,6 +50,20 @@
           <target>${java.version}</target>
         </configuration>
       </plugin>
+         <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-eclipse-plugin</artifactId>
+        <version>${plugin.maven.eclipse.version}</version>
+        <configuration>
+          <downloadSources>true</downloadSources>
+          <downloadJavadocs>true</downloadJavadocs>
+        </configuration>
+      </plugin>
+      <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-dependency-plugin</artifactId>
+            <version>${plugin.maven.dependency.version}</version>
+        </plugin>
     </plugins>
   </build>
 
