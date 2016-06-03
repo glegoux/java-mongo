@@ -1,38 +1,37 @@
 package org.mongo;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import static java.lang.String.format;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
-    }
+import org.bson.types.ObjectId;
+import org.junit.Test;
+import org.mongodb.morphia.annotations.Entity;
+import org.mongodb.morphia.annotations.Id;
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
+public class AppTest extends AbstractTest {
+	
+	@Test
+	public void testInsert() {
+		getDs().save(new User("gilles"));
+	}
+	
+	@Entity("users")
+    private static final class User {
+		
+        @Id
+        private ObjectId id;
+        private String name;
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
+        private User() {}
+
+        private User(final String name) {
+            this.name = name;
+        }
+
+        @Override
+        public String toString() {
+            return format("User{name='%s'}", name);
+        }
+        
     }
+	
 }
