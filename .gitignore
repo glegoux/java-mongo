@@ -1,21 +1,15 @@
-*.class
+# Eclipse
+.metadata/
+bin/
+.classpath
+.settings
+.project
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# Maven
+target/
 
-# Package Files #
-*.jar
-*.war
-*.ear
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-
-# maven
-java-mongo/target/
-
-# eclipse
-java-mongo/bin/
-java-mongo/.classpath
-java-mongo/.project
-java-mongo/.settings
+# Java
+doc/
+**/*.class
+**/*.jar
+**/*.war

@@ -1,27 +1,19 @@
-# Java Mongo
+# Mongo
 
-*Used technologies:*  
+https://docs.google.com/presentation/d/1oV455Q6qcrjKJNWdjyYW0M7ff-GhNpbwjjJDYiMEuBo/edit#slide=id.g115a70ee99_0_0
 
-* `MongoDB 3.0.12` see with `mongo --version` and `mongod --version`  
-documentation:  https://docs.mongodb.com/v3.0/  
+# Plan
 
-* `Java SE 1.8` see with `java -version` and `javac -version`  
-documentation: http://docs.oracle.com/javase/8/docs/  
+* Introduction  
+* Basis  
+* Advanced Requests
+* MongoDB driver java & Morphia 
+* MongoDB Architecture 
+* Failure Management System  
+* MongoDB at 7Circles
+* Enhancements  
+   * MongoDB 3.X 
+   * Sharding  
+   * Monitoring & MongoDB as a Service
+* Bibliography  
 
-*Execution*  
-
-```
-mvn exec:java
-```
-
-*Generate documentation*  
-
-```
-mvn javadoc:javadoc
-```
-
-*Run test*  
-
-```
-mvn test
-```

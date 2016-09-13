@@ -1,4 +1,4 @@
-package org.mongo;
+package org.presentation.test;
 
 import org.junit.After;
 import org.junit.Before;
@@ -11,7 +11,7 @@ import com.mongodb.MongoClientURI;
 
 public abstract class AbstractTest {
 
-  public static final String TEST_DB_NAME = "java_mongo_test";
+  public static final String TEST_DB_NAME = "mongo_java";
   private final MongoClient mongoClient;
   private final Morphia morphia = new Morphia();
   private DB db;
@@ -29,10 +29,9 @@ public abstract class AbstractTest {
   public void setUp() {
     setDb(getMongoClient().getDB(TEST_DB_NAME));
     setDs(getMorphia().createDatastore(getMongoClient(), getDb().getName()));
-    cleanup();
   }
 
-  @After
+  // @After
   public void tearDown() {
     cleanup();
     getMongoClient().close();
