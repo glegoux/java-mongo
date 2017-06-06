@@ -1,8 +1,6 @@
 # Mongo
 
-https://docs.google.com/presentation/d/1oV455Q6qcrjKJNWdjyYW0M7ff-GhNpbwjjJDYiMEuBo/edit#slide=id.g115a70ee99_0_0
-
-# Plan
+**Plan**
 
 * Introduction  
 * Basis  
@@ -10,7 +8,7 @@ https://docs.google.com/presentation/d/1oV455Q6qcrjKJNWdjyYW0M7ff-GhNpbwjjJDYiME
 * MongoDB driver java & Morphia 
 * MongoDB Architecture 
 * Failure Management System  
-* MongoDB at 7Circles
+* MongoDB in production
 * Enhancements  
    * MongoDB 3.X 
    * Sharding  
